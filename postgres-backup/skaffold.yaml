@@ -1,0 +1,9 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: backup
+build:
+  artifacts:
+  - image: psql-backup-image
+    docker:
+      dockerfile: Dockerfile
